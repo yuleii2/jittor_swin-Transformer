@@ -1,0 +1,2 @@
+# jittor_swin-Transformer
+本项目为在jittor环境下对swin Transformer的微调，针对准确识别乳腺超声图像做出优化
