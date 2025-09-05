@@ -1,6 +1,6 @@
 # Jittor 超声图像 BI-RADS 分类 | Swin Transformer + 渐进解冻
 
-> 使用 **Jittor** 框架实现的乳腺超声图像 **BI-RADS 等级分类**基线方案，采用 **Swin Transformer** 主干与**渐进式解冻**训练策略，结合医学影像特有的数据增强与混合损失，提升在小样本条件下的鲁棒性与泛化能力。
+> 使用 **Jittor** 框架实现的乳腺超声图像 **BI-RADS 等级分类**基线方案，采用 **Swin Transformer** 主干与**渐进式解冻**训练策略，结合医学影像特有的数据增强与混合损失，提升在小样本与不平衡样本条件下的鲁棒性与泛化能力。
 
 ---
 
@@ -31,7 +31,7 @@
 > 注：项目使用了 Jittor 推荐的 **jimm** 库，安装与使用请按其官方说明进行。
 
 # 安装项目依赖
-pip install -r requirements.txt
+conda env create -f environment.yml
 
 ---
 
@@ -49,14 +49,6 @@ pip install -r requirements.txt
 
 ---
 
-## 注意事项
-
-- 项目 **Description** 与 **Topics** 建议包含关键词：`jittor`, `ultrasound`, `classification`, `bi-rads`；  
-- 若涉及私有或敏感数据，请在开源前进行脱敏与合规检查；  
-- 请确保第三方依赖许可证与本仓库许可证兼容。
-
----
-
 ## 致谢
 
 - 感谢 **Jittor** 与 **jimm (Jittor Image Models)** 开源生态；  
@@ -65,4 +57,4 @@ pip install -r requirements.txt
 
 ## 许可证
 
-使用 **Apache-2.0**。请在仓库根目录放置 `LICENSE` 文件。
+使用 **Apache-2.0**。
